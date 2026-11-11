@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="트롯 가수 이하린 공식 홈페이지 · JLyn 엔터테인먼트 · 섭외 문의 010-3151-0179">
+<meta property="og:title" content="가수 이하린 | JLyn 엔터테인먼트"><meta property="og:description" content="정통과 세미를 넘나드는 트롯계의 아이돌 이하린 · 섭외 문의"><meta property="og:image" content="https://jlynent.art/p/b02.jpg"><meta property="og:url" content="https://jlynent.art/">
+</head><body>
+<title>JLyn Ent 가수 이하린</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:wght@500;600&display=swap">
+<style>
+/* 대형 기획사 공식 페이지 톤: 흑백 기본 + 샴페인 골드 한 가지 포인트, 넓은 여백, 가는 선 */
+:root{
+  --bg:#FFFFFF; --ink:#0F0F10; --sub:#5B5B60; --muted:#8E8E93; --line:#E7E5E1; --soft:#F6F4F0;
+  --gold:#A8875A; --gold-l:#E9DFCF; --dark:#0F0F10;
+  --f-serif:"Noto Serif KR","Nanum Myeongjo",serif;
+  --f-sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-en:"Cormorant Garamond","Times New Roman",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-sans);font-size:17px;line-height:1.7;margin:0;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;text-wrap:balance}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:#fff}
+
+/* 상단 */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .bar{display:flex;align-items:center;justify-content:space-between;padding-block:12px}
+.logo{height:30px;width:auto;color:var(--ink);display:block}
+.top .bar small{font-family:var(--f-en);font-size:15px;letter-spacing:.18em;color:var(--sub)}
+.menu{display:flex;gap:22px;overflow-x:auto;padding-block:0 10px;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{flex:none;text-decoration:none;font-size:15px;font-weight:500;color:var(--sub);padding:4px 0;border-bottom:1px solid transparent}
+.menu a:hover{color:var(--ink);border-color:var(--ink)}
+@media (max-width:440px){.menu{gap:0;justify-content:space-between}.menu a{font-size:15px;padding:10px 2px;flex:1 1 auto;text-align:center}}
+.menu a{min-width:44px;text-align:center;padding-block:10px}
+@media (max-width:350px){.menu a{font-size:14px;padding:10px 1px}}
+.slide figcaption{align-items:center}.slide figcaption a{padding:10px 0 10px 12px}
+footer a{display:inline-block;padding:12px 8px}
+
+/* 첫 화면 */
+.hero{position:relative;background:var(--dark);color:#fff;overflow:hidden}
+.hero img{display:block;width:100%;height:min(118vw,620px);object-fit:cover;object-position:50% 22%;opacity:.92}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,16,0) 38%,rgba(15,15,16,.86) 82%,#0F0F10 100%)}
+.hero .cap{position:absolute;left:0;right:0;bottom:0;z-index:2}
+.hero .cap .wrap{padding-block:0 26px}
+.en{font-family:var(--f-en);letter-spacing:.24em;font-size:14px;color:var(--gold-l)}
+.hero h1{font-family:var(--f-serif);font-weight:900;font-size:44px;line-height:1.1;margin-top:6px;letter-spacing:-.01em}
+.hero h1 span{display:block;font-family:var(--f-en);font-weight:500;font-size:20px;letter-spacing:.3em;color:#d9d6cf;margin-top:8px}
+.lead{padding-block:28px 6px}
+.lead p.big{font-family:var(--f-serif);font-weight:700;font-size:26px;line-height:1.4;margin:0}
+.lead p.big em{font-style:normal;color:var(--gold)}
+.lead p.sm{margin:12px 0 0;color:var(--ink);font-weight:700;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{font-size:14px;font-weight:500;padding:6px 12px;border:1px solid var(--ink);letter-spacing:.02em}
+.tags span.g{border-color:var(--gold);color:var(--gold)}
+.quick{display:flex;gap:12px;margin-top:22px;align-items:center}
+.quick a{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);display:grid;place-items:center;color:var(--ink);text-decoration:none;transition:background .2s,color .2s}
+.quick a:hover,.quick a:active{background:var(--ink);color:#fff}
+.quick a svg{width:22px;height:22px}
+.quick small{margin-left:4px;color:var(--sub);font-size:14px}
+
+/* 유튜브 채널 */
+.yt{display:flex;gap:8px;margin-top:12px}
+.yt a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px 0 6px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:#fff}
+.yt a:hover,.yt a:active{border-color:var(--ink)}
+.yt .yi{width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center}
+.yt .yi svg{width:14px;height:14px}
+.yt b{font-size:15px;font-weight:500}
+
+/* 섹션 */
+section{padding-block:52px 8px}
+.sh{display:grid;gap:4px;padding-bottom:16px;border-bottom:1px solid var(--ink)}
+.sh .en{color:var(--gold);font-size:13px}
+h2{font-family:var(--f-serif);font-weight:700;font-size:27px;line-height:1.3}
+.hint{color:var(--sub);font-size:16px;margin:12px 0 0}
+
+/* 표현 */
+.feed{margin-top:16px;height:356px;overflow:hidden;position:relative;background:var(--soft);padding:14px}
+.feed::after{content:"";position:absolute;left:0;right:0;top:0;height:34px;background:linear-gradient(var(--soft),rgba(246,244,240,0));pointer-events:none}
+.feed ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;height:100%}
+.cm{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;background:#fff;padding:12px 14px;border:1px solid var(--line)}
+.cm i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:12px;color:#fff;background:var(--ink)}
+.cm.n i{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.cm.g i{background:var(--gold)}
+.cm p{margin:0;font-size:16px;line-height:1.5}
+@media (prefers-reduced-motion:no-preference){.cm.in{animation:up .5s ease-out}}
+@keyframes up{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
+
+/* 노래 */
+.songs{list-style:none;margin:0;padding:0}
+.song{display:grid;grid-template-columns:40px 1fr auto;gap:2px 12px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.song .no{font-family:var(--f-en);font-size:22px;color:var(--gold)}
+.song h3{font-family:var(--f-serif);font-size:21px;font-weight:700}
+.pp{grid-row:1/3;grid-column:3;align-self:center;width:54px;height:54px;border-radius:50%;border:1px solid var(--ink);background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0}
+.pp svg{width:22px;height:22px}
+.pp .i-pause{display:none}
+.song.on .pp{background:var(--ink);color:#fff}
+.song.on .pp .i-play{display:none}
+.song.on .pp .i-pause{display:block}
+.song .bar{grid-column:2/-1;height:2px;background:var(--line);margin-top:8px;display:none}
+.song.on .bar{display:block}
+.song .bar i{display:block;height:100%;width:0;background:var(--gold)}
+.song p{grid-column:2/3;margin:2px 0 0;font-size:16px}
+.song .m{grid-column:2/3;font-size:14px;color:var(--sub)}
+
+/* 영상 */
+.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:18px;border:1px solid var(--ink)}
+.tabs button{min-height:60px;padding:6px 4px;border:0;background:#fff;color:var(--ink);font-weight:700;font-size:16px;cursor:pointer;line-height:1.25}
+.tabs button+button{border-left:1px solid var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.tabs small{display:block;font-weight:400;font-size:13px;opacity:.8}
+.swipe{font-size:15px;color:var(--gold);margin:10px 0 0;text-align:right}
+.vpanes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;align-items:flex-start;transition:height .25s}
+.vpanes::-webkit-scrollbar{display:none}
+.vpanes>.vlist{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
+.vlist{list-style:none;margin:6px 0 0;padding:0}
+.vlist a{display:grid;grid-template-columns:140px 1fr;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.th{position:relative;display:block;aspect-ratio:16/9;background:linear-gradient(135deg,#1c1c1e,#0f0f10 60%,#3a3022);overflow:hidden;border:1px solid #2a2a2c}
+.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.th .pl{position:absolute;inset:0;display:grid;place-items:center;color:#fff}
+.th .pl svg{width:40px;height:40px;padding:10px 8px 10px 12px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff}
+.th em{position:absolute;left:6px;top:6px;font-style:normal;font-size:10px;letter-spacing:.12em;background:rgba(0,0,0,.65);color:#fff;padding:2px 5px}
+.vt b{display:block;font-size:16px;line-height:1.45;font-weight:700}
+.vt small{display:block;margin-top:2px;color:var(--sub);font-size:14px;line-height:1.45}
+
+/* 사진 */
+.slides{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:18px;padding-bottom:6px;scrollbar-width:thin}
+.slide{flex:0 0 80%;scroll-snap-align:center;margin:0;display:grid;gap:8px}
+.slide button{padding:0;border:0;background:none;cursor:pointer;display:block;width:100%}
+.slide img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;max-width:100%;background:var(--soft)}
+.slide figcaption{display:flex;justify-content:space-between;font-size:14px;color:var(--sub);letter-spacing:.02em}
+.slide figcaption a{color:var(--ink);font-weight:500}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+.dots span{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.dots span.on{background:var(--ink);width:18px;border-radius:3px}
+.status{min-height:1.4em;font-size:15px;color:var(--gold);margin-top:8px}
+
+/* 경력 */
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 0;font-family:var(--f-serif);font-weight:700;font-size:19px}
+summary::-webkit-details-marker{display:none}
+summary span{font-family:var(--f-sans);font-size:14px;color:var(--sub);font-weight:400;flex:none}
+summary span::after{content:"  +";color:var(--ink);font-size:18px}
+details[open] summary span::after{content:"  −"}
+details ul{margin:0;padding:0 0 18px;list-style:none;columns:2;column-gap:18px;font-size:15px;color:#3f3f44}
+details li{break-inside:avoid;padding:3px 0 3px 12px;position:relative}
+details li::before{content:"";position:absolute;left:0;top:.8em;width:4px;height:1px;background:var(--gold)}
+@media (max-width:420px){details ul{columns:1}}
+
+/* 연락 */
+.contact{display:grid;margin-top:6px}
+.ct{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.ct .ic{width:44px;height:44px;border-radius:50%;border:1px solid var(--ink);display:grid;place-items:center}
+.ct .ic svg{width:20px;height:20px}
+.ct b{display:block;font-size:17px;font-weight:700}
+.ct small{color:var(--sub);font-size:15px;word-break:break-all}
+.ct .go{font-family:var(--f-en);font-size:15px;letter-spacing:.1em;color:var(--gold)}
+.copyrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.copyrow button{min-height:44px;padding:0 16px;border:1px solid var(--ink);background:#fff;color:var(--ink);font-weight:500;cursor:pointer}
+footer{margin-top:56px;background:var(--dark);color:#bdbab3;text-align:center;padding:36px 20px 44px;font-size:13px;letter-spacing:.04em}
+footer .logo{color:#fff;height:28px;margin:0 auto 14px}
+footer a{color:#fff}
+</style>
+
+<header class="top"><div class="wrap">
+  <div class="bar"><svg class="logo" role="img" aria-label="JLyn ENT." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735.41 359.49">
+<title>JLyn ENT.</title>
+<g transform="translate(33.41,258.26)"><path fill="currentColor" d="M83.94 3.52C135.35 3.52 163.92 -21.97 163.92 -67.68V-218.26H102.98V-68.85C102.98 -54.79 95.80 -46.88 82.91 -46.88C70.02 -46.88 62.84 -54.79 62.84 -68.85V-86.72H6.59V-69.43C6.59 -22.56 34.28 3.52 83.94 3.52Z M175.35 0.00H330.33V-51.56H236.29V-218.26H175.35Z M342.80 61.23H382.64C410.47 61.23 425.12 49.80 436.40 19.63L501.73 -154.69H441.38L421.17 -89.06C418.09 -79.10 415.16 -68.85 412.52 -58.74C409.74 -68.85 406.96 -78.96 404.03 -89.06L384.54 -154.69H323.61L382.93 0.00L382.20 2.34C378.83 13.18 377.07 16.70 366.23 16.70H342.80Z M560.34 -82.03C560.34 -99.90 568.10 -108.69 581.87 -108.69C595.64 -108.69 603.40 -99.90 603.40 -84.38V0.00H662.00V-97.56C662.00 -134.77 644.27 -158.20 609.85 -158.20C585.53 -158.20 569.86 -146.63 559.61 -128.91V-154.69H501.74V0.00H560.34Z M461.30 61.23H491.02V52.95H471.46V43.63H489.49V35.51H471.46V26.65H491.05V18.37H461.30Z M519.57 61.23H529.98V43.48C529.98 40.78 529.70 36.12 529.35 31.03C531.74 36.15 533.32 39.37 535.85 43.48L546.81 61.23H558.00V18.37H547.59V36.61C547.59 39.60 547.91 44.52 548.19 48.80C546.38 44.14 544.60 40.89 542.70 37.73L530.73 18.37H519.57Z M586.53 26.65H599.50V61.23H609.63V26.65H622.60V18.37H586.53Z M656.56 61.23C659.64 61.23 662.00 58.93 662.00 55.88C662.00 52.83 659.64 50.50 656.56 50.50C653.48 50.50 651.12 52.83 651.12 55.88C651.12 58.93 653.48 61.23 656.56 61.23Z"/></g>
+</svg>
+<small>ARTIST · LEE HA LYN</small></div>
+  <nav class="menu" aria-label="바로가기"><a href="#about">프로필</a><a href="#songs">대표곡</a><a href="#videos">영상</a><a href="#photos">사진</a><a href="#career">경력</a><a href="#contact">섭외문의</a></nav>
+</div></header>
+
+<div class="hero" id="about">
+  <img src="p/b02.jpg" alt="가수 이하린 프로필">
+  <div class="cap"><div class="wrap">
+    <div class="en">JLyn ENTERTAINMENT ARTIST</div>
+    <h1>이하린<span>LEE HA LYN</span></h1>
+  </div></div>
+</div>
+
+<div class="wrap">
+  <div class="lead">
+    <p class="big">정통과 세미를 넘나드는<br><em>트롯계의 아이돌</em></p>
+    <p class="sm">주걱을 치면서도 흔들림 없는 노래. 미스트롯3 현역부A, 무대에 서면 객석이 먼저 일어나는 가수 이하린입니다.</p>
+    <div class="tags"><span>미스트롯3 주걱여신</span><span>자작곡 ‘시루섬’</span><span>뮤지컬 배우 출신</span><span class="g">트롯계 아이돌</span><span class="g">행사여왕</span><span>낚시하는 가수</span></div>
+    <div class="quick" aria-label="바로 연락하기">
+      <a href="tel:01031510179" aria-label="전화 걸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a href="sms:01031510179" aria-label="문자 보내기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+      <a href="mailto:ttonie@jlynent.art?subject=%EC%9D%B4%ED%95%98%EB%A6%B0%20%EC%84%AD%EC%99%B8%20%EB%AC%B8%EC%9D%98" aria-label="메일 보내기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+      <small>섭외·문의</small>
+    </div>
+    <div class="yt" aria-label="유튜브 채널">
+      <a href="https://www.youtube.com/channel/UC3Pv9f7E3lAKEs3Hgzlzt0A" target="_blank" rel="noopener"><span class="yi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 8.5v7l6-3.5z"/></svg></span><b>이하린TV</b></a>
+      <a href="https://www.youtube.com/channel/UCKorakYwP0r5DkhRejML-Og" target="_blank" rel="noopener"><span class="yi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 8.5v7l6-3.5z"/></svg></span><b>낚시퀸</b></a>
+    </div>
+  </div>
+
+<section aria-labelledby="feed-h">
+  <div class="sh"><span class="en">VOICES</span><h2 id="feed-h">이하린 가수를 표현한다면 👇</h2></div>
+  <div class="feed" aria-live="off"><ol id="feed"></ol></div>
+</section>
+
+<section aria-labelledby="songs-h" id="songs">
+  <div class="sh"><span class="en">SONGS</span><h2 id="songs-h">대표곡</h2></div>
+  <p class="hint">재생 버튼을 누르면 하린 목소리로 바로 들을 수 있어요.</p>
+  <ol class="songs">
+    <li class="song"><span class="no">01</span><h3>이쁘니</h3><button class="pp" type="button" data-src="a/01_ippeuni.mp3" aria-label="이쁘니 들어보기"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><p>예쁜 게 죄라면 무기징역! 중독성 100%</p><div class="m">2025 · 댄스트롯 · 흥</div><div class="bar"><i></i></div></li>
+    <li class="song"><span class="no">02</span><h3>시루섬</h3><button class="pp" type="button" data-src="a/02_sirusum.mp3" aria-label="시루섬 들어보기"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><p>197명의 기적, 하린이 직접 쓰고 부른 실화</p><div class="m">2025 · 자작곡 · 한</div><div class="bar"><i></i></div></li>
+    <li class="song"><span class="no">03</span><h3>돌아와</h3><button class="pp" type="button" data-src="a/03_dorawa.mp3" aria-label="돌아와 들어보기"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><p>눈물 대신 설렘으로 부르는 재회송</p><div class="m">2023 · 트로피컬 댄스트롯 · 흥</div><div class="bar"><i></i></div></li>
+    <li class="song"><span class="no">04</span><h3>느낌아니까</h3><button class="pp" type="button" data-src="a/04_neukkim.mp3" aria-label="느낌아니까 들어보기"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><p>말 안 해도 아는 그 설렘, 데뷔곡</p><div class="m">2021 · 세미트롯 · 흥</div><div class="bar"><i></i></div></li>
+    <li class="song"><span class="no">05</span><h3>하루만</h3><button class="pp" type="button" data-src="a/05_haruman.mp3" aria-label="하루만 들어보기"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><p>요즘 뜨는 노래, 진정한 트롯발라드</p><div class="m">2021 · 트롯 발라드 · 한</div><div class="bar"><i></i></div></li>
+  </ol>
+</section>
+
+<section aria-labelledby="vid-h" id="videos">
+  <div class="sh"><span class="en">VIDEO</span><h2 id="vid-h">흥과 한의 세계를 자유롭게 오고 가는 이하린 가수의 감성</h2></div>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="v-h" id="tab-h">흥하린<small>행사 무대</small></button>
+    <button role="tab" aria-selected="false" aria-controls="v-t" id="tab-t">한서린하린<small>정통의 깊이</small></button>
+    <button role="tab" aria-selected="false" aria-controls="v-m" id="tab-m">미스트롯 무대<small>TV조선 방송</small></button>
+  </div>
+  <p class="hint swipe">옆으로 밀어서 다른 무대도 보세요 →</p>
+  <div class="vpanes" id="vpanes">
+  <ul class="vlist" id="v-h" role="tabpanel" aria-labelledby="tab-h">
+<li><a href="https://www.youtube.com/watch?v=_KbSSuLxWGc" target="_blank" rel="noopener"><span class="th"><img src="t/_KbSSuLxWGc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>영등포구 체육대회 · 콘서트가 된 행사장</b><small>2026년 11월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=d2KKSjBFP1I" target="_blank" rel="noopener"><span class="th"><img src="t/d2KKSjBFP1I.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>여수섬박람회 · 축제장을 뒤집은 흥파티</b><small>2026년 10월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=64ZIT_-JrcY" target="_blank" rel="noopener"><span class="th"><img src="t/64ZIT_-JrcY.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>주걱 치다 보면 가끔 그래요 · 행사 현장</b><small>2025년 12월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=VjONjb9MtAc" target="_blank" rel="noopener"><span class="th"><img src="t/VjONjb9MtAc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>장충체육관 어르신 한마음잔치 · 사랑의 거리</b><small>2025년 6월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=FaMrZNUO6ow" target="_blank" rel="noopener"><span class="th"><img src="t/FaMrZNUO6ow.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>관객과 소통하는 가수 · 행사 만족도 200%</b><small>2025년 6월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=PUfwva08Ryc" target="_blank" rel="noopener"><span class="th"><img src="t/PUfwva08Ryc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>MBC ON 트롯챔피언 · 이쁘니</b><small>2026년 10월 · 방송 무대</small></span></a></li>
+  </ul>
+  <ul class="vlist" id="v-t" role="tabpanel" aria-labelledby="tab-t">
+<li><a href="https://www.youtube.com/watch?v=BhlGAo7c60E" target="_blank" rel="noopener"><span class="th"><img src="t/BhlGAo7c60E.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>시루섬 · 이하린 작사·작곡</b><small>2025년 8월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=evSbMNav8VU" target="_blank" rel="noopener"><span class="th"><img src="t/evSbMNav8VU.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>2026 메들리 · 이미자 명곡 모음</b><small>2026년 1월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=PEDnVtZDhRw" target="_blank" rel="noopener"><span class="th"><img src="t/PEDnVtZDhRw.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>삼백리 한려수도 (이미자)</b><small>2024년 9월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=nAWINXqCd8o" target="_blank" rel="noopener"><span class="th"><img src="t/nAWINXqCd8o.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>이정표 (장윤정)</b><small>2024년 3월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=14lra_t5XBI" target="_blank" rel="noopener"><span class="th"><img src="t/14lra_t5XBI.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>잔잔한 트로트 메들리 40분</b><small>2024년 7월</small></span></a></li>
+  </ul>
+  <ul class="vlist" id="v-m" role="tabpanel" aria-labelledby="tab-m">
+<li><a href="https://www.youtube.com/watch?v=Oseswp6rZlU" target="_blank" rel="noopener"><span class="th"><img src="t/Oseswp6rZlU.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>1라운드 · 사랑의 트위스트</b><small>주걱으로 박자를 가지고 노는 무대<br>TV조선 미스트롯3 · 2023년 12월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=2U6b1PFttm8" target="_blank" rel="noopener"><span class="th"><img src="t/2U6b1PFttm8.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>2라운드 · 아! 사루비아</b><small>현역부A 팀 무대<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=pKdE_RZvwVo" target="_blank" rel="noopener"><span class="th"><img src="t/pKdE_RZvwVo.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>3라운드 · 사랑의 거리</b><small>1:1 대결 무대 (vs 슬기)<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=XjLbu8Uiu0M" target="_blank" rel="noopener"><span class="th"><img src="t/XjLbu8Uiu0M.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>4라운드 · 복드림걸즈 팀 메들리</b><small>팀 메들리 무대<br>TV조선 미스트롯3 · 2024년 2월 방송</small></span></a></li>
+  </ul>
+  </div>
+</section>
+
+<section aria-labelledby="ph-h" id="photos">
+  <div class="sh"><span class="en">PHOTO</span><h2 id="ph-h">프로필 사진</h2></div>
+  <p class="hint">옆으로 넘겨 보고, 사진을 누르면 저장돼요.</p>
+  <div class="slides" id="slides">
+<figure class="slide"><button data-file="d/hl_profile_02.jpg" data-name="이하린_프로필_1.jpg" class="dl" aria-label="1번 사진 저장"><img src="p/b02.jpg" alt="레드 드레스 프로필" ></button><figcaption><span>01 / 04 · 웹·SNS용</span><a href="d/hl_profile_02.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_03.jpg" data-name="이하린_프로필_2.jpg" class="dl" aria-label="2번 사진 저장"><img src="p/b03.jpg" alt="핑크 드레스 프로필" loading="lazy"></button><figcaption><span>02 / 04 · 웹·SNS용</span><a href="d/hl_profile_03.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_05.jpg" data-name="이하린_프로필_3.jpg" class="dl" aria-label="3번 사진 저장"><img src="p/b05.jpg" alt="화이트 드레스 프로필" loading="lazy"></button><figcaption><span>03 / 04 · 웹·SNS용</span><a href="d/hl_profile_05.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_01.jpg" data-name="이하린_프로필_4.jpg" class="dl" aria-label="4번 사진 저장"><img src="p/b01.jpg" alt="무대 사진 프로필" loading="lazy"></button><figcaption><span>04 / 04 · 인쇄 가능</span><a href="d/hl_profile_01.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+  </div>
+  <div class="dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+  <div class="status" role="status"></div>
+</section>
+
+<section aria-labelledby="career-h" id="career">
+  <div class="sh"><span class="en">CAREER</span><h2 id="career-h">이런 무대에 섰어요</h2></div>
+  <details><summary>2026년 무대 <span>15곳</span></summary><ul><li>영등포구 체육대회</li><li>충청남도 체육대회</li><li>여수섬박람회</li><li>MBC 트롯챔피언</li><li>수원통닭축제 개막</li><li>트롯퀸즈 슈퍼콘서트</li><li>장충체육관 효대잔치</li><li>시루섬축제</li><li>진안 한마음대회</li><li>단양 철쭉제</li><li>장흥 키조개축제</li><li>트로트클라쓰 (여수MBC)</li><li>하동 참숭어 축제</li><li>통영 굴축제</li><li>칠곡 낙화담축제</li></ul></details>
+  <details><summary>2025년 무대 <span>11곳</span></summary><ul><li>거제 불꽃축제 송년의 밤</li><li>단국대 송년의 밤</li><li>추자도 굴비대축제</li><li>서울 선녀축제</li><li>DDP 빌보드코리아</li><li>삼화페인트 VIP 행사</li><li>트로트클라쓰</li><li>장충체육관 효대잔치</li><li>열린탑가요쇼</li><li>단양 철쭉제</li><li>미국 텍사스 킬린시 K-트롯</li></ul></details>
+  <details><summary>TV·방송 <span>11개</span></summary><ul><li>미스트롯3 (현역부A)</li><li>미스트롯3 갈라쇼</li><li>MBC 트롯챔피언</li><li>KBS 아침마당 쌍쌍파티</li><li>KBS 무대를 빌려드립니다</li><li>MBC 싱글벙글쇼</li><li>TBS 힘든싱어 4승</li><li>미스터로또 37회</li><li>FTV 피싱캠프탁탁</li><li>TBC 대구아카데미</li><li>아이넷TV 음색</li></ul></details>
+  <details><summary>2024년 이전 무대 <span>더보기</span></summary><ul><li>통영 한산대첩축제</li><li>경상남도생활체육대축전</li><li>경주 한마음문화축제</li><li>영암 국화축제</li><li>단양 철쭉축제</li><li>서울 어르신한마음대잔치</li><li>동작구 42콘서트</li><li>천안·아산 이통장 한마음대회</li><li>제천시 체육인의 밤</li><li>토요트롯 in 문경</li><li>천안 흥타령 춤축제</li><li>천안 벚꽃축제</li><li>제주 문화시민의 날</li><li>충남 시민체육대회</li><li>장충체육관 어르신 대축제</li><li>K컬쳐 유스페스티벌</li></ul></details>
+  <details><summary>음반 <span>5장</span></summary><ul><li>2025 ‘이쁘니’</li><li>2025 ‘시루섬’ (자작곡)</li><li>2023 ‘돌아와’</li><li>2021 ‘느낌아니까’ · ‘하루만’</li><li>2019 별님이 ‘통통통’</li></ul></details>
+  <details><summary>뮤지컬·그 외 <span>더보기</span></summary><ul><li>앙드레김 서울 패션위크 (2026)</li><li>FC 트롯퀸즈 여자축구단</li><li>연예인 배드민턴단</li><li>수원FC 시축 (2025)</li><li>뮤지컬 ‘목계나루아가씨’</li><li>뮤지컬 ‘국현씨의 시간여행’</li><li>연극 ‘룸넘버 13’</li><li>음악극 ‘프라미스’</li><li>여수엑스포 퍼포먼스</li><li>충주 전국체전 개막 뮤지컬</li></ul></details>
+</section>
+
+<section aria-labelledby="ct-h" id="contact">
+  <div class="sh"><span class="en">CONTACT</span><h2 id="ct-h">섭외·문의</h2></div>
+  <div class="contact">
+    <a class="ct" href="tel:01031510179"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>전화하기</b><small>010-3151-0179</small></span><span class="go">CALL</span></a>
+    <a class="ct" href="sms:01031510179"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><b>문자 보내기</b><small>010-3151-0179</small></span><span class="go">SMS</span></a>
+    <a class="ct" href="mailto:ttonie@jlynent.art?subject=%EC%9D%B4%ED%95%98%EB%A6%B0%20%EC%84%AD%EC%99%B8%20%EB%AC%B8%EC%9D%98"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><span><b>메일 보내기</b><small>ttonie@jlynent.art</small></span><span class="go">MAIL</span></a>
+  </div>
+  <div class="copyrow"><button type="button" data-copy="010-3151-0179">번호 복사</button><button type="button" data-copy="ttonie@jlynent.art">메일 주소 복사</button></div>
+  <div class="status" role="status"></div>
+  <p class="hint">JLyn ENT. 대표 정보경</p>
+</section>
+</div>
+
+<footer><svg class="logo" role="img" aria-label="JLyn ENT." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735.41 359.49">
+<title>JLyn ENT.</title>
+<g transform="translate(33.41,258.26)"><path fill="currentColor" d="M83.94 3.52C135.35 3.52 163.92 -21.97 163.92 -67.68V-218.26H102.98V-68.85C102.98 -54.79 95.80 -46.88 82.91 -46.88C70.02 -46.88 62.84 -54.79 62.84 -68.85V-86.72H6.59V-69.43C6.59 -22.56 34.28 3.52 83.94 3.52Z M175.35 0.00H330.33V-51.56H236.29V-218.26H175.35Z M342.80 61.23H382.64C410.47 61.23 425.12 49.80 436.40 19.63L501.73 -154.69H441.38L421.17 -89.06C418.09 -79.10 415.16 -68.85 412.52 -58.74C409.74 -68.85 406.96 -78.96 404.03 -89.06L384.54 -154.69H323.61L382.93 0.00L382.20 2.34C378.83 13.18 377.07 16.70 366.23 16.70H342.80Z M560.34 -82.03C560.34 -99.90 568.10 -108.69 581.87 -108.69C595.64 -108.69 603.40 -99.90 603.40 -84.38V0.00H662.00V-97.56C662.00 -134.77 644.27 -158.20 609.85 -158.20C585.53 -158.20 569.86 -146.63 559.61 -128.91V-154.69H501.74V0.00H560.34Z M461.30 61.23H491.02V52.95H471.46V43.63H489.49V35.51H471.46V26.65H491.05V18.37H461.30Z M519.57 61.23H529.98V43.48C529.98 40.78 529.70 36.12 529.35 31.03C531.74 36.15 533.32 39.37 535.85 43.48L546.81 61.23H558.00V18.37H547.59V36.61C547.59 39.60 547.91 44.52 548.19 48.80C546.38 44.14 544.60 40.89 542.70 37.73L530.73 18.37H519.57Z M586.53 26.65H599.50V61.23H609.63V26.65H622.60V18.37H586.53Z M656.56 61.23C659.64 61.23 662.00 58.93 662.00 55.88C662.00 52.83 659.64 50.50 656.56 50.50C653.48 50.50 651.12 52.83 651.12 55.88C651.12 58.93 653.48 61.23 656.56 61.23Z"/></g>
+</svg>
+<div>© JLyn ENTERTAINMENT · 가수 이하린</div><div style="margin-top:6px"><a href="https://www.youtube.com/@Ha_Lyn" target="_blank" rel="noopener">YouTube 이하린TV</a></div></footer>
+
+<script>
+(function(){
+  var words=[
+    ["n","정통이랑 세미를 이렇게 자유자재로 넘나드는 가수 처음 봐요"],
+    ["p","트롯계의 아이돌, 이 말이 딱이에요"],
+    ["n","밝은 모습 안에 한서림이 가득한 가수님, 화이팅!!"],
+    ["g","이하린, 언젠가는 대한민국을 휩쓸 가수입니다"],
+    ["g","미스트롯 다시 나가면 진선미는 무조건이지~"],
+    ["p","주걱 치면서 음정 하나 안 흔들리는 거 실화예요?"],
+    ["n","어르신들이 다 일어나서 박수 치시더라고요"],
+    ["p","목소리에 꿀 발랐나 봐요 🍯"],
+    ["g","이쁘니 한 번 들으면 하루 종일 흥얼흥얼… 수능금지곡 인정"],
+    ["p","얼굴도 노래도 그냥 ‘이쁘니’ 그 자체"],
+    ["n","시루섬은 직접 쓰고 부른 곡이라 그런지 진심이 느껴져요"],
+    ["p","행사 섭외 1순위 가수, 괜히 그런 게 아니네요"],
+    ["g","우리 할머니가 손주보다 하린 씨를 더 좋아하셔요 ㅎㅎ"],
+    ["p","무대 장악력 미쳤다 진짜"],
+    ["n","신나게 놀다가 한 서린 노래 부를 땐 소름 돋아요"],
+    ["p","뮤지컬 배우 출신이라 표정 연기까지 완벽"],
+    ["g","주걱여신 등장하면 분위기 끝난 거예요"],
+    ["p","보기만 해도 기분 좋아지는 긍정 에너지"],
+    ["n","노래 잘하지, 예쁘지, 성격까지 좋다니 반칙 아닌가요"],
+    ["p","이 언니 무대는 직캠 필수"],
+    ["g","회사 체육대회에 모셨는데 직원들이 아직도 얘기해요"],
+    ["n","정통트롯 꺾기가 아주 맛깔나요. 옛날 생각납니다"],
+    ["p","볼수록 매력 있는 가수, 입덕 완료"],
+    ["g","하린 씨 노래 들으면 십 년은 젊어지는 기분이에요"],
+    ["n","이미자 선생님 노래를 이렇게 부르는 젊은 가수는 오랜만이네요"],
+    ["p","텐션 장인, 무대 찢었다"],
+    ["g","말 타고 낚시하고 축구까지… 못하는 게 뭐예요 😂"],
+    ["p","트롯퀸즈 무대에서도 단연 눈에 띄어요"],
+    ["n","앙코르 세 번 외쳤습니다"],
+    ["g","이런 가수는 꼭 떠야 해요. 진심으로 응원합니다"],
+    ["p","주걱 들고 노래하는 거 따라 해봤는데 절대 쉽지 않음…"],
+    ["n","흥도 한도 다 가진 가수, 이하린"]
+  ];
+  var tags={p:"흥",n:"한",g:"♥"};
+  var ol=document.getElementById("feed"), i=0, SHOW=4;
+  function make(w,anim){
+    var li=document.createElement("li"); li.className="cm "+w[0]+(anim?" in":"");
+    var a=document.createElement("i"); a.textContent=tags[w[0]];
+    var d=document.createElement("div"); var p=document.createElement("p"); p.textContent=w[1];
+    d.appendChild(p); li.appendChild(a); li.appendChild(d); return li;
+  }
+  for(; i<SHOW; i++) ol.appendChild(make(words[i],false));
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!reduce){ setInterval(function(){ ol.appendChild(make(words[i % words.length],true)); i++; while(ol.children.length>SHOW) ol.removeChild(ol.firstElementChild); }, 2200); }
+
+
+  /* 대표곡 듣기 */
+  var au=new Audio(); au.preload="none"; var cur=null;
+  function stop(){ if(cur){cur.classList.remove("on"); cur.querySelector(".bar i").style.width="0";} cur=null; }
+  document.querySelectorAll(".pp").forEach(function(b){
+    b.addEventListener("click",function(){
+      var li=b.closest(".song");
+      if(cur===li){ if(au.paused){au.play();li.classList.add("on")} else {au.pause();li.classList.remove("on")} return; }
+      stop(); cur=li; li.classList.add("on"); au.src=b.getAttribute("data-src"); au.play().catch(function(){ stop(); });
+    });
+  });
+  au.addEventListener("timeupdate",function(){ if(cur&&au.duration) cur.querySelector(".bar i").style.width=(au.currentTime/au.duration*100)+"%"; });
+  au.addEventListener("ended",stop);
+
+  var vp=document.getElementById("vpanes"), tabs=[].slice.call(document.querySelectorAll(".tabs button")), panes=[].slice.call(vp.children);
+  function mark(n){ tabs.forEach(function(t,k){t.setAttribute("aria-selected",k===n)}); vp.style.height=panes[n].offsetHeight+"px"; }
+  tabs.forEach(function(t,k){ t.onclick=function(){ vp.scrollTo({left:panes[k].offsetLeft-vp.offsetLeft,behavior:"smooth"}); mark(k); }; });
+  var vt; vp.addEventListener("scroll",function(){ clearTimeout(vt); vt=setTimeout(function(){ mark(Math.round(vp.scrollLeft/vp.clientWidth)); },60); },{passive:true});
+  window.addEventListener("load",function(){mark(0)}); window.addEventListener("resize",function(){mark(Math.round(vp.scrollLeft/vp.clientWidth))}); mark(0);
+
+  var sl=document.getElementById("slides"), dots=document.querySelectorAll("#dots span");
+  sl.addEventListener("scroll",function(){
+    var w=sl.firstElementChild.getBoundingClientRect().width+12; var n=Math.round(sl.scrollLeft/w);
+    dots.forEach(function(d,k){d.className=k===n?"on":""});
+  },{passive:true});
+
+  var dlp=(window.claude&&window.claude.use)?window.claude.use("downloads"):Promise.resolve(null);
+  function say(el,t){ if(el) el.textContent=t; }
+  document.querySelectorAll(".dl").forEach(function(b){
+    b.addEventListener("click", async function(){
+      var st=b.closest("section").querySelector(".status");
+      var file=b.getAttribute("data-file"), name=b.getAttribute("data-name");
+      var dl=null; try{dl=await dlp;}catch(e){}
+      if(!dl){ window.open(file,"_blank"); say(st,"새 창에서 열었어요. 길게 눌러 저장하세요."); return; }
+      say(st,"준비 중이에요…");
+      try{ var r=await fetch(file); if(!r.ok) throw 0; await dl.save({filename:name,data:await r.blob()}); say(st,"저장했어요."); }
+      catch(e){ say(st, e&&e.code==="declined" ? "저장을 취소했어요." : "저장이 안 되면 ‘원본 보기’를 눌러주세요."); }
+    });
+  });
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var st=b.closest("section").querySelector(".status"), t=b.getAttribute("data-copy");
+      try{ navigator.clipboard.writeText(t).then(function(){say(st,t+" 복사했어요.")},function(){say(st,t)}); }catch(e){ say(st,t); }
+    });
+  });
+})();
+</script>
+
+</body></html>
