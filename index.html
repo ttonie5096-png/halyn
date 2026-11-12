@@ -77,6 +77,7 @@ section{padding-block:52px 8px}
 .sh{display:grid;gap:4px;padding-bottom:16px;border-bottom:1px solid var(--ink)}
 .sh .en{color:var(--gold);font-size:13px}
 h2{font-family:var(--f-serif);font-weight:700;font-size:27px;line-height:1.3}
+.sh .note{margin:2px 0 0;font-size:13px;color:var(--muted);font-weight:400}
 .hint{color:var(--sub);font-size:16px;margin:12px 0 0}
 
 /* 표현 */
@@ -175,11 +176,11 @@ footer a{color:#fff}
 <g transform="translate(33.41,258.26)"><path fill="currentColor" d="M83.94 3.52C135.35 3.52 163.92 -21.97 163.92 -67.68V-218.26H102.98V-68.85C102.98 -54.79 95.80 -46.88 82.91 -46.88C70.02 -46.88 62.84 -54.79 62.84 -68.85V-86.72H6.59V-69.43C6.59 -22.56 34.28 3.52 83.94 3.52Z M175.35 0.00H330.33V-51.56H236.29V-218.26H175.35Z M342.80 61.23H382.64C410.47 61.23 425.12 49.80 436.40 19.63L501.73 -154.69H441.38L421.17 -89.06C418.09 -79.10 415.16 -68.85 412.52 -58.74C409.74 -68.85 406.96 -78.96 404.03 -89.06L384.54 -154.69H323.61L382.93 0.00L382.20 2.34C378.83 13.18 377.07 16.70 366.23 16.70H342.80Z M560.34 -82.03C560.34 -99.90 568.10 -108.69 581.87 -108.69C595.64 -108.69 603.40 -99.90 603.40 -84.38V0.00H662.00V-97.56C662.00 -134.77 644.27 -158.20 609.85 -158.20C585.53 -158.20 569.86 -146.63 559.61 -128.91V-154.69H501.74V0.00H560.34Z M461.30 61.23H491.02V52.95H471.46V43.63H489.49V35.51H471.46V26.65H491.05V18.37H461.30Z M519.57 61.23H529.98V43.48C529.98 40.78 529.70 36.12 529.35 31.03C531.74 36.15 533.32 39.37 535.85 43.48L546.81 61.23H558.00V18.37H547.59V36.61C547.59 39.60 547.91 44.52 548.19 48.80C546.38 44.14 544.60 40.89 542.70 37.73L530.73 18.37H519.57Z M586.53 26.65H599.50V61.23H609.63V26.65H622.60V18.37H586.53Z M656.56 61.23C659.64 61.23 662.00 58.93 662.00 55.88C662.00 52.83 659.64 50.50 656.56 50.50C653.48 50.50 651.12 52.83 651.12 55.88C651.12 58.93 653.48 61.23 656.56 61.23Z"/></g>
 </svg>
 <small>ARTIST · LEE HA LYN</small></div>
-  <nav class="menu" aria-label="바로가기"><a href="#about">프로필</a><a href="#songs">대표곡</a><a href="#videos">영상</a><a href="#photos">사진</a><a href="#career">경력</a><a href="#contact">섭외문의</a></nav>
+  <nav class="menu" aria-label="바로가기"><a href="#about">프로필</a><a href="#videos">영상</a><a href="#songs">대표곡</a><a href="#photos">사진</a><a href="#career">경력</a><a href="#contact">섭외문의</a></nav>
 </div></header>
 
 <div class="hero" id="about">
-  <img src="p/b02.jpg" alt="가수 이하린 프로필">
+  <img src="p/b06h.jpg" alt="가수 이하린 프로필" style="object-position:50% 25%">
   <div class="cap"><div class="wrap">
     <div class="en">JLyn ENTERTAINMENT ARTIST</div>
     <h1>이하린<span>LEE HA LYN</span></h1>
@@ -204,8 +205,41 @@ footer a{color:#fff}
   </div>
 
 <section aria-labelledby="feed-h">
-  <div class="sh"><span class="en">VOICES</span><h2 id="feed-h">이하린 가수를 표현한다면 👇</h2></div>
+  <div class="sh"><span class="en">VOICES</span><h2 id="feed-h">이하린 가수를 표현한다면 👇</h2><p class="note">실제 올라온 댓글입니다 ;)</p></div>
   <div class="feed" aria-live="off"><ol id="feed"></ol></div>
+</section>
+
+<section aria-labelledby="vid-h" id="videos">
+  <div class="sh"><span class="en">VIDEO</span><h2 id="vid-h">흥과 한의 세계를 자유롭게 오고 가는 이하린 가수의 감성</h2></div>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="v-h" id="tab-h">흥하린<small>행사 무대</small></button>
+    <button role="tab" aria-selected="false" aria-controls="v-t" id="tab-t">한서린하린<small>정통의 깊이</small></button>
+    <button role="tab" aria-selected="false" aria-controls="v-m" id="tab-m">미스트롯 무대<small>TV조선 방송</small></button>
+  </div>
+  <p class="hint swipe">옆으로 밀어서 다른 무대도 보세요 →</p>
+  <div class="vpanes" id="vpanes">
+  <ul class="vlist" id="v-h" role="tabpanel" aria-labelledby="tab-h">
+<li><a href="https://www.youtube.com/watch?v=J6aokCqeH8o" target="_blank" rel="noopener"><span class="th"><img src="t/J6aokCqeH8o.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>행사장에서 역조공 선물한 가수 이하린</b><small>2026년 11월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=_KbSSuLxWGc" target="_blank" rel="noopener"><span class="th"><img src="t/_KbSSuLxWGc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>영등포구 체육대회 · 콘서트가 된 행사장</b><small>2026년 11월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=d2KKSjBFP1I" target="_blank" rel="noopener"><span class="th"><img src="t/d2KKSjBFP1I.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>여수섬박람회 · 축제장을 뒤집은 흥파티</b><small>2026년 10월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=PUfwva08Ryc" target="_blank" rel="noopener"><span class="th"><img src="t/PUfwva08Ryc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>MBC ON 트롯챔피언 · 이쁘니</b><small>2026년 10월 · 방송 무대</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=FaMrZNUO6ow" target="_blank" rel="noopener"><span class="th"><img src="t/FaMrZNUO6ow.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>관객과 소통하는 가수 · 행사 만족도 200%</b><small>2025년 6월 · 행사 쇼츠</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=BpbZbLGMTwc" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/BpbZbLGMTwc/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>새벽비 (혜은이) · 이하린 커버</b><small>2023년 7월 · 커버 영상</small></span></a></li>
+  </ul>
+  <ul class="vlist" id="v-t" role="tabpanel" aria-labelledby="tab-t">
+<li><a href="https://www.youtube.com/watch?v=benZQItPZ_Q&list=PL1lbmK7sXDkzlx8fzsLhivqMl-xg7PtcC" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/benZQItPZ_Q/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>모란동백 (조영남) · 트로트클라쓰</b><small>2026년 8월 · K-TROT하린 재생목록</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=BhlGAo7c60E" target="_blank" rel="noopener"><span class="th"><img src="t/BhlGAo7c60E.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>시루섬 · 이하린 작사·작곡</b><small>2025년 8월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=nGgD85Cnhp4" target="_blank" rel="noopener"><span class="th"><img src="https://i.ytimg.com/vi/nGgD85Cnhp4/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>2025년 한국인이 좋아하는 트로트 명곡 모음</b><small>2025년 1월 · 1시간 16분</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=PEDnVtZDhRw" target="_blank" rel="noopener"><span class="th"><img src="t/PEDnVtZDhRw.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>삼백리 한려수도 (이미자)</b><small>2024년 9월</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=14lra_t5XBI" target="_blank" rel="noopener"><span class="th"><img src="t/14lra_t5XBI.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>잔잔한 트로트 메들리 40분</b><small>2024년 7월</small></span></a></li>
+  </ul>
+  <ul class="vlist" id="v-m" role="tabpanel" aria-labelledby="tab-m">
+<li><a href="https://www.youtube.com/watch?v=Oseswp6rZlU" target="_blank" rel="noopener"><span class="th"><img src="t/Oseswp6rZlU.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>1라운드 · 사랑의 트위스트</b><small>주걱으로 박자를 가지고 노는 무대<br>TV조선 미스트롯3 · 2023년 12월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=2U6b1PFttm8" target="_blank" rel="noopener"><span class="th"><img src="t/2U6b1PFttm8.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>2라운드 · 아! 사루비아</b><small>현역부A 팀 무대<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=pKdE_RZvwVo" target="_blank" rel="noopener"><span class="th"><img src="t/pKdE_RZvwVo.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>3라운드 · 사랑의 거리</b><small>1:1 대결 무대 (vs 슬기)<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
+<li><a href="https://www.youtube.com/watch?v=XjLbu8Uiu0M" target="_blank" rel="noopener"><span class="th"><img src="t/XjLbu8Uiu0M.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>4라운드 · 복드림걸즈 팀 메들리</b><small>팀 메들리 무대<br>TV조선 미스트롯3 · 2024년 2월 방송</small></span></a></li>
+  </ul>
+  </div>
 </section>
 
 <section aria-labelledby="songs-h" id="songs">
@@ -220,49 +254,17 @@ footer a{color:#fff}
   </ol>
 </section>
 
-<section aria-labelledby="vid-h" id="videos">
-  <div class="sh"><span class="en">VIDEO</span><h2 id="vid-h">흥과 한의 세계를 자유롭게 오고 가는 이하린 가수의 감성</h2></div>
-  <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" aria-controls="v-h" id="tab-h">흥하린<small>행사 무대</small></button>
-    <button role="tab" aria-selected="false" aria-controls="v-t" id="tab-t">한서린하린<small>정통의 깊이</small></button>
-    <button role="tab" aria-selected="false" aria-controls="v-m" id="tab-m">미스트롯 무대<small>TV조선 방송</small></button>
-  </div>
-  <p class="hint swipe">옆으로 밀어서 다른 무대도 보세요 →</p>
-  <div class="vpanes" id="vpanes">
-  <ul class="vlist" id="v-h" role="tabpanel" aria-labelledby="tab-h">
-<li><a href="https://www.youtube.com/watch?v=_KbSSuLxWGc" target="_blank" rel="noopener"><span class="th"><img src="t/_KbSSuLxWGc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>영등포구 체육대회 · 콘서트가 된 행사장</b><small>2026년 11월 · 행사 쇼츠</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=d2KKSjBFP1I" target="_blank" rel="noopener"><span class="th"><img src="t/d2KKSjBFP1I.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>여수섬박람회 · 축제장을 뒤집은 흥파티</b><small>2026년 10월 · 행사 쇼츠</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=64ZIT_-JrcY" target="_blank" rel="noopener"><span class="th"><img src="t/64ZIT_-JrcY.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>주걱 치다 보면 가끔 그래요 · 행사 현장</b><small>2025년 12월 · 행사 쇼츠</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=VjONjb9MtAc" target="_blank" rel="noopener"><span class="th"><img src="t/VjONjb9MtAc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>장충체육관 어르신 한마음잔치 · 사랑의 거리</b><small>2025년 6월 · 행사 쇼츠</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=FaMrZNUO6ow" target="_blank" rel="noopener"><span class="th"><img src="t/FaMrZNUO6ow.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>관객과 소통하는 가수 · 행사 만족도 200%</b><small>2025년 6월 · 행사 쇼츠</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=PUfwva08Ryc" target="_blank" rel="noopener"><span class="th"><img src="t/PUfwva08Ryc.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>MBC ON 트롯챔피언 · 이쁘니</b><small>2026년 10월 · 방송 무대</small></span></a></li>
-  </ul>
-  <ul class="vlist" id="v-t" role="tabpanel" aria-labelledby="tab-t">
-<li><a href="https://www.youtube.com/watch?v=BhlGAo7c60E" target="_blank" rel="noopener"><span class="th"><img src="t/BhlGAo7c60E.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>시루섬 · 이하린 작사·작곡</b><small>2025년 8월</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=evSbMNav8VU" target="_blank" rel="noopener"><span class="th"><img src="t/evSbMNav8VU.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><em>SHORTS</em></span><span class="vt"><b>2026 메들리 · 이미자 명곡 모음</b><small>2026년 1월</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=PEDnVtZDhRw" target="_blank" rel="noopener"><span class="th"><img src="t/PEDnVtZDhRw.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>삼백리 한려수도 (이미자)</b><small>2024년 9월</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=nAWINXqCd8o" target="_blank" rel="noopener"><span class="th"><img src="t/nAWINXqCd8o.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>이정표 (장윤정)</b><small>2024년 3월</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=14lra_t5XBI" target="_blank" rel="noopener"><span class="th"><img src="t/14lra_t5XBI.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>잔잔한 트로트 메들리 40분</b><small>2024년 7월</small></span></a></li>
-  </ul>
-  <ul class="vlist" id="v-m" role="tabpanel" aria-labelledby="tab-m">
-<li><a href="https://www.youtube.com/watch?v=Oseswp6rZlU" target="_blank" rel="noopener"><span class="th"><img src="t/Oseswp6rZlU.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>1라운드 · 사랑의 트위스트</b><small>주걱으로 박자를 가지고 노는 무대<br>TV조선 미스트롯3 · 2023년 12월 방송</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=2U6b1PFttm8" target="_blank" rel="noopener"><span class="th"><img src="t/2U6b1PFttm8.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>2라운드 · 아! 사루비아</b><small>현역부A 팀 무대<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=pKdE_RZvwVo" target="_blank" rel="noopener"><span class="th"><img src="t/pKdE_RZvwVo.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>3라운드 · 사랑의 거리</b><small>1:1 대결 무대 (vs 슬기)<br>TV조선 미스트롯3 · 2024년 1월 방송</small></span></a></li>
-<li><a href="https://www.youtube.com/watch?v=XjLbu8Uiu0M" target="_blank" rel="noopener"><span class="th"><img src="t/XjLbu8Uiu0M.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vt"><b>4라운드 · 복드림걸즈 팀 메들리</b><small>팀 메들리 무대<br>TV조선 미스트롯3 · 2024년 2월 방송</small></span></a></li>
-  </ul>
-  </div>
-</section>
-
 <section aria-labelledby="ph-h" id="photos">
   <div class="sh"><span class="en">PHOTO</span><h2 id="ph-h">프로필 사진</h2></div>
   <p class="hint">옆으로 넘겨 보고, 사진을 누르면 저장돼요.</p>
   <div class="slides" id="slides">
-<figure class="slide"><button data-file="d/hl_profile_02.jpg" data-name="이하린_프로필_1.jpg" class="dl" aria-label="1번 사진 저장"><img src="p/b02.jpg" alt="레드 드레스 프로필" ></button><figcaption><span>01 / 04 · 웹·SNS용</span><a href="d/hl_profile_02.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
-<figure class="slide"><button data-file="d/hl_profile_03.jpg" data-name="이하린_프로필_2.jpg" class="dl" aria-label="2번 사진 저장"><img src="p/b03.jpg" alt="핑크 드레스 프로필" loading="lazy"></button><figcaption><span>02 / 04 · 웹·SNS용</span><a href="d/hl_profile_03.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
-<figure class="slide"><button data-file="d/hl_profile_05.jpg" data-name="이하린_프로필_3.jpg" class="dl" aria-label="3번 사진 저장"><img src="p/b05.jpg" alt="화이트 드레스 프로필" loading="lazy"></button><figcaption><span>03 / 04 · 웹·SNS용</span><a href="d/hl_profile_05.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
-<figure class="slide"><button data-file="d/hl_profile_01.jpg" data-name="이하린_프로필_4.jpg" class="dl" aria-label="4번 사진 저장"><img src="p/b01.jpg" alt="무대 사진 프로필" loading="lazy"></button><figcaption><span>04 / 04 · 인쇄 가능</span><a href="d/hl_profile_01.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_02.jpg" data-name="이하린_프로필_1.jpg" class="dl" aria-label="1번 사진 저장"><img src="p/b02.jpg" alt="레드 드레스 프로필" ></button><figcaption><span>01 / 05 · 웹·SNS용</span><a href="d/hl_profile_02.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_03.jpg" data-name="이하린_프로필_2.jpg" class="dl" aria-label="2번 사진 저장"><img src="p/b03.jpg" alt="핑크 드레스 프로필" loading="lazy"></button><figcaption><span>02 / 05 · 웹·SNS용</span><a href="d/hl_profile_03.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_01.jpg" data-name="이하린_프로필_3.jpg" class="dl" aria-label="3번 사진 저장"><img src="p/b01.jpg" alt="무대 사진 프로필" loading="lazy"></button><figcaption><span>03 / 05 · 인쇄 가능</span><a href="d/hl_profile_01.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_05.jpg" data-name="이하린_프로필_4.jpg" class="dl" aria-label="4번 사진 저장"><img src="p/b05.jpg" alt="화이트 드레스 프로필" loading="lazy"></button><figcaption><span>04 / 05 · 웹·SNS용</span><a href="d/hl_profile_05.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
+<figure class="slide"><button data-file="d/hl_profile_06.jpg" data-name="이하린_프로필_5.jpg" class="dl" aria-label="5번 사진 저장"><img src="p/b06.jpg" alt="파스텔 드레스 프로필" loading="lazy"></button><figcaption><span>05 / 05 · 웹·SNS용</span><a href="d/hl_profile_06.jpg" target="_blank" rel="noopener">원본 보기</a></figcaption></figure>
   </div>
-  <div class="dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+  <div class="dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span><span></span></div>
   <div class="status" role="status"></div>
 </section>
 
@@ -302,7 +304,7 @@ footer a{color:#fff}
     ["p","트롯계의 아이돌, 이 말이 딱이에요"],
     ["n","밝은 모습 안에 한서림이 가득한 가수님, 화이팅!!"],
     ["g","이하린, 언젠가는 대한민국을 휩쓸 가수입니다"],
-    ["g","미스트롯 다시 나가면 진선미는 무조건이지~"],
+    ["g","이하린 가수님, 미스트롯에서 진선미 가능할 거라던 패널들 평가가 맞음"],
     ["p","주걱 치면서 음정 하나 안 흔들리는 거 실화예요?"],
     ["n","어르신들이 다 일어나서 박수 치시더라고요"],
     ["p","목소리에 꿀 발랐나 봐요 🍯"],
@@ -357,6 +359,26 @@ footer a{color:#fff}
   });
   au.addEventListener("timeupdate",function(){ if(cur&&au.duration) cur.querySelector(".bar i").style.width=(au.currentTime/au.duration*100)+"%"; });
   au.addEventListener("ended",stop);
+
+  /* 들어오면 이쁘니 자동재생: -26dB(약 5% 음량). 일시정지를 누르면 처음 상태로 돌아가 다시 재생·정지 가능 */
+  var LOW=Math.pow(10,-26/20), auto=false, tried=false;
+  var first=document.querySelector('.pp[data-src="a/01_ippeuni.mp3"]'), firstLi=first&&first.closest(".song");
+  function startAuto(){
+    if(tried||!firstLi||cur) return; tried=true;
+    cur=firstLi; auto=true; au.src=first.getAttribute("data-src"); au.volume=LOW;
+    au.play().then(function(){ firstLi.classList.add("on"); }).catch(function(){ cur=null; auto=false; tried=false; });
+  }
+  function kick(e){ if(e&&e.target&&e.target.closest&&e.target.closest(".pp")) return; if(!tried&&!cur) startAuto(); }
+  window.addEventListener("load",startAuto);
+  ["pointerdown","touchstart","keydown","scroll"].forEach(function(ev){ window.addEventListener(ev,kick,{passive:true}); });
+  document.querySelectorAll(".pp").forEach(function(b){
+    b.addEventListener("click",function(e){
+      tried=true;
+      if(auto && b===first){ e.stopImmediatePropagation(); au.pause(); au.currentTime=0; auto=false; stop(); return; }
+      auto=false;
+      au.volume = (b===first) ? LOW : 1;
+    },true);
+  });
 
   var vp=document.getElementById("vpanes"), tabs=[].slice.call(document.querySelectorAll(".tabs button")), panes=[].slice.call(vp.children);
   function mark(n){ tabs.forEach(function(t,k){t.setAttribute("aria-selected",k===n)}); vp.style.height=panes[n].offsetHeight+"px"; }
